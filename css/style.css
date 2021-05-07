@@ -17,6 +17,30 @@ body {
 .video {
     background-color: black;
     flex-grow: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.profile {
+    position: relative;
+    margin: 0 2px;
+}
+
+.profile img {
+    height: 100px;
+}
+
+.profile .img-text {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 10px;
+    padding: 3px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
 }
 
 nav {
@@ -28,17 +52,25 @@ nav {
 
 .nav-late {
     flex-basis: 200px;
-
 }
 
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+
 }
 
 nav ul:last-child {
     justify-content: flex-end;
+}
+
+.green {
+    color: #0f0f;
+}
+
+.nav-text-green {
+    color: #fff;
 }
 
 nav ul li {
@@ -48,11 +80,8 @@ nav ul li {
     font-size: 20px;
 }
 
-.nav-center {
-    
-}
 
-.nav-text{
+.nav-text, .nav-text-green{
     font-size: 10px;
     padding-top: 3px;
 }
@@ -65,5 +94,8 @@ nav ul li {
     background-color: #555;
     color: #f00;
     font-size: 10px;
-    padding: 10px;
+    padding: 24px 10px;
+
 }
+
+
